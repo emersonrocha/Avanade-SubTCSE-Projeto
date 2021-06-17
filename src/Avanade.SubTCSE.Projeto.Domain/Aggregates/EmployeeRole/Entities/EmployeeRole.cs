@@ -14,6 +14,11 @@ namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.EmployeeRole.Entities
             RoleName = roleName;
         }
 
+        public EmployeeRole(string roleName)
+        {
+            RoleName = roleName;
+        }
+
         public string Id { get; private set; } 
 
         public string RoleName { get; init; } // o init garante que a propriedade seja alterada apenas no construtor e em nenhum outro método.
